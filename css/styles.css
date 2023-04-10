@@ -1,0 +1,262 @@
+:root {
+  /* primary */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+ 
+  text-align: center;
+
+}
+
+/* header  */
+header{
+  background-image: url(../images/bg-header-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+  
+}
+
+main{
+  padding: 0 .9rem 0 .9rem;
+  
+}
+
+.headerBackgroundImg{
+  padding: 7rem 0 3rem 0;
+}
+
+.headerOne{
+color: var(--Dark-Grayish-Blue);  
+font-weight: 600;
+font-size: 2.1rem;
+;
+margin-top: 0;
+}
+
+.headerParagraph{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin-bottom: 3rem;
+  
+}
+
+/* buttons section */
+ .iosDowloadButton{
+  display: block;
+  
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  color: white;
+  background-color: var(--Strong-Cyan);
+  border-radius: 1.5rem;
+  border-style: none;
+  box-shadow: 0 .2rem 1rem -1px hsl(171, 66%, 44%);
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: .2rem solid hsl(171, 75%, 35%);
+  
+    
+ }
+
+ 
+
+ .macDownloadButton{
+  display: block;
+ 
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  margin: 1.5rem 0 10rem 0;
+  color: white;
+  background-color: var(--Light-Blue);
+  border-radius: 1.5rem;
+  border-style: none;
+  box-shadow: 0 .2rem 1rem -1px hsl(233, 100%, 69%);
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: .2rem solid hsl(233, 95%, 62%);
+
+ }
+
+ /* keepTrack section */
+.keepTrack>h2{
+  color: var(--Dark-Grayish-Blue);  
+font-weight: 600;
+font-size: 2.1rem;
+;
+}
+
+.keepTrack>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+/* applePc  */
+ .applePc{
+  max-width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+ }
+
+ /* features section */
+.features>h2{
+  color: var(--Dark-Grayish-Blue); 
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  
+
+}
+
+.features>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin: .5rem auto 2.5rem auto;
+
+}
+
+/* accessAnywhere section */
+ 
+.accessAnywhere>h2{
+  color: var(--Dark-Grayish-Blue);  
+font-weight: 600;
+font-size: 2.1rem;
+margin: 10rem auto .5rem auto;
+}
+
+.accessAnywhere>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* devices section */
+.devices{
+  max-width: 90%;
+  margin: 3rem auto 7rem auto;
+}
+
+/* supercharge section */
+
+.supercharge>h2{
+  color: var(--Dark-Grayish-Blue);  
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-bottom: .5rem
+}
+
+.supercharge>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin: 0 auto 5rem auto;
+}
+
+/* icons section */
+
+.icons{
+  margin-bottom: 10rem;
+}
+
+.icons>h2{
+  color: var(--Dark-Grayish-Blue); 
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.icons>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin: .5rem auto 3rem auto;
+}
+
+/* logos section */
+
+.logos>img{
+  display: block;
+  
+  margin: auto auto 5rem auto;
+}
+
+/* download section */
+
+.download>h2{
+  color: var(--Dark-Grayish-Blue);  
+font-weight: 600;
+font-size: 2.1rem;
+;
+}
+
+.download>p{
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+/* footer section */
+
+footer{
+  background-color: rgb(243, 238, 238);
+}
+
+.footerIcon{
+  display: block;
+  margin:auto;
+  
+}
+
+.smallIcon{
+  max-width: 3rem;
+  margin: 3rem auto ;
+}
+
+/* links section */
+.links>ul{
+  list-style: none;
+  padding: 0;
+  
+}
+
+.linkList>li{
+  margin-bottom: 2rem;
+}
+
+.links a{
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+}
+
+/* socialmediaLogos section */
+
+.twitterLogo{
+  margin: auto 2rem;
+
+}
+
+
+.attribution { 
+  font-size:.8rem;  
+  font-weight: 600;
+color: hsl(171, 66%, 44%);
+}
+
+
+.attribution a { 
+  color: hsl(233, 100%, 69%);
+  text-decoration: none;
+ }
