@@ -39,7 +39,7 @@ header {
 }
 
 
-
+/* MOBILE DESIGN-MOBILE FIRST */
 /* MAIN SECTION */
 main {
   padding: 0 0.9rem 0 0.9rem;
@@ -132,14 +132,14 @@ button > a {
 
 
 /* FEATURES SECTION */
-.features > h2 {
+.features  h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.features > p {
+.features  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin: 0.5rem auto 2.5rem auto;
@@ -192,14 +192,14 @@ button > a {
   margin-bottom: 10rem;
 }
 
-.icons > h2 {
+.icons  h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.icons > p {
+.icons  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin: 0.5rem auto 3rem auto;
@@ -285,40 +285,9 @@ footer {
 }
 
 
-/* ROOT SECTION. COLORS USED FOR THE PROJECT */
-:root {
-  /* primary */
-  --Strong-Cyan: hsl(171, 66%, 44%);
-  --Light-Blue: hsl(233, 100%, 69%);
-
-  /* neutral */
-  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
-  --Grayish-Blue: hsl(201, 11%, 66%);
-}
-
-
-
-/* BOX SIZING */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-
-
-/* BODY SECTION */
-body {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.125rem;
-  margin: 0;
-
-  text-align: center;
-}
-
-
-
-/* HEADER SECTION   */
+/* DESKTOP DESIGN */
+@media screen and (min-width: 900px) {
+  /* HEADER SECTION   */
 header {
   background-image: url(../images/bg-header-mobile.png);
   background-size: 100%;
@@ -349,7 +318,11 @@ main {
 .headerParagraph {
   color: var(--Grayish-Blue);
   font-weight: 400;
+  width: 50%;
+  display: block;
+  margin: auto;
   margin-bottom: 3rem;
+  
 }
 
 
@@ -361,11 +334,17 @@ button > a {
   color: white;
 }
 
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
 
 .iosDownloadButton {
   display: block;
   padding: 1rem 0 1rem 0;
-  width: 100%;
+  margin-right: .5rem;
+  width: 15%;
   color: white;
   background-color: var(--Strong-Cyan);
   border-radius: 1.5rem;
@@ -379,10 +358,10 @@ button > a {
 
 .macDownloadButton {
   display: block;
-
-  width: 100%;
+  width: 15%;
   padding: 1rem 0 1rem 0;
-  margin: 1.5rem 0 10rem 0;
+  margin: 0;
+  margin-left: .5rem;
   color: white;
   background-color: var(--Light-Blue);
   border-radius: 1.5rem;
@@ -391,45 +370,83 @@ button > a {
   font-weight: 400;
   font-size: 1rem;
   border-bottom: 0.2rem solid hsl(233, 95%, 62%);
+  
 }
 
 
 
 /* KEEP TRACK SECTION */
+.keepTrack{
+  
+  margin-top: -3rem;
+}
+
 .keepTrack > h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 2.1rem;
+  margin-top: 10rem;
 }
 
 .keepTrack > p {
   color: var(--Grayish-Blue);
   font-weight: 400;
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 
 
 /* APPLE PC IMAGE SECTION  */
 .applePc {
-  max-width: 90%;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  max-width: 100%;
+  position: relative;
+  right: 4rem;
+  
 }
+
+.imgWrapper{
+  flex-basis: 70%;
+  }
+
 
 
 
 /* FEATURES SECTION */
-.features > h2 {
+
+.features{
+  display: flex;
+  justify-content: center;
+}
+
+.features  h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.features > p {
+.features  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
-  margin: 0.5rem auto 2.5rem auto;
+  margin: 0 0 3rem 0rem;
+  padding: 0 ;
+  max-width: 55%;
+
+}
+
+/* FEATURES CONTENT WRAPPER SECTION */
+.FeaturesContentWrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  text-align: left;
+ margin: 0;
+ position: relative;
+ left: 3rem;
+  
+
 }
 
 
@@ -446,13 +463,16 @@ button > a {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin-top: 0;
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 
 
 /* TABLET AND MOBILE IMAGE SECTION */
 .devices {
-  max-width: 90%;
+  max-width: 100%;
   margin: 3rem auto 7rem auto;
 }
 
@@ -477,40 +497,54 @@ button > a {
 /* ICONS SECTION */
 .icons {
   margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.icons > h2 {
+.icons  h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.icons > p {
+.icons  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin: 0.5rem auto 3rem auto;
+  max-width: 50%;
+}
+
+.iconWrapper{
+  flex-basis: 30%;
 }
 
 
 
 /* LOGOS SECTION */
+.logos{
+  display: flex;
+}
+
 .logos > img {
   display: block;
-
   margin: auto auto 5rem auto;
 }
 
 
 
 /* DOWNLOAD BUTTONS SECTION */
-.download > h2 {
+.download{
+  margin: 0 0 10rem 0;
+}
+
+.download  h2 {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
   font-size: 2.1rem;
 }
 
-.download > p {
+.download  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin-bottom: 3rem;
@@ -569,6 +603,7 @@ footer {
 .attribution a {
   color: hsl(233, 100%, 69%);
   text-decoration: none;
+}
 }
 
 
