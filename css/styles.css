@@ -55,7 +55,7 @@ main {
 .headerOne {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   margin-top: 0;
 }
 
@@ -305,13 +305,13 @@ main {
 
 /* HEADER SECTION */
 .headerBackgroundImg {
-  padding: 7rem 0 3rem 0;
+  padding: 8rem 0 2rem 0;
 }
 
 .headerOne {
   color: var(--Dark-Grayish-Blue);
   font-weight: 600;
-  font-size: 2.1rem;
+  font-size: 3rem;
   margin-top: 0;
 }
 
@@ -555,11 +555,16 @@ button > a {
 /* FOOTER SECTION */
 footer {
   background-color: rgb(243, 238, 238);
+  display: flex;
+  justify-content: space-between;
 }
 
 .footerIcon {
-  display: block;
-  margin: auto;
+  display:flex;
+  flex-basis: 20%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .smallIcon {
@@ -570,13 +575,29 @@ footer {
 
 
 /* LINK LIST SECTION */
+.links{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  
+}
+
 .links > ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  
+  
+  
+  
+  
 }
 
 .linkList > li {
-  margin-bottom: 2rem;
+  margin: 0 .5rem 0 .5rem;
 }
 
 .links a {
@@ -587,10 +608,16 @@ footer {
 
 
 /* SOCIAL MEDIA LOGOS SECTION */
+.socialMediaLogos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20%;
+}
+
 .twitterLogo {
   margin: auto 2rem;
 }
-
 
 
 /* ATTRIBUTION SECTION */
