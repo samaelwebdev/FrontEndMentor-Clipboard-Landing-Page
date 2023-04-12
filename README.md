@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [@samaelwebdev](https://github.com/samaelwebdev/FrontEndMentor-Clipboard-Landing-Page/settings/pages)
-- Frontend Mentor - [@SamaelWevDev](https://www.frontendmentor.io/profile/samaelwebdev)
+- Website - [samaelwebdev](https://github.com/samaelwebdev)
+- Frontend Mentor - [SamaelWevDev](https://www.frontendmentor.io/profile/samaelwebdev)
