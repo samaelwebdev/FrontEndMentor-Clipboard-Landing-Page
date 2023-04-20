@@ -1,5 +1,4 @@
 /* ROOT SECTION. COLORS USED FOR THE PROJECT */
-
 :root {
   /* primary */
   --Strong-Cyan: hsl(171, 66%, 44%);
@@ -323,6 +322,7 @@ main {
   display: block;
   margin: auto;
   margin-bottom: 3rem;
+  line-height: 2rem;
   
 }
 
@@ -344,7 +344,7 @@ button > a {
 .iosDownloadButton {
   display: block;
   padding: 1rem 0 1rem 0;
-  margin-right: .5rem;
+  margin-right: 1rem;
   width: 15%;
   color: white;
   background-color: var(--Strong-Cyan);
@@ -354,7 +354,14 @@ button > a {
   font-weight: 400;
   font-size: 1rem;
   border-bottom: 0.2rem solid hsl(171, 75%, 35%);
+  transition: transform 1s;
 }
+
+.iosDownloadButton:hover{
+  transform: scale(1.2, 1.2);
+}
+
+
 
 
 .macDownloadButton {
@@ -362,7 +369,7 @@ button > a {
   width: 15%;
   padding: 1rem 0 1rem 0;
   margin: 0;
-  margin-left: .5rem;
+  margin-left: 1rem;
   color: white;
   background-color: var(--Light-Blue);
   border-radius: 1.5rem;
@@ -371,7 +378,12 @@ button > a {
   font-weight: 400;
   font-size: 1rem;
   border-bottom: 0.2rem solid hsl(233, 95%, 62%);
+  transition: transform 1s;
   
+}
+
+.macDownloadButton:hover{
+  transform: scale(1.2, 1.2);
 }
 
 
@@ -395,6 +407,7 @@ button > a {
   width: 50%;
   display: block;
   margin: auto;
+  line-height: 2rem;
 }
 
 
@@ -464,9 +477,10 @@ button > a {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin-top: 0;
-  width: 50%;
+  width: 45%;
   display: block;
   margin: auto;
+  line-height: 2rem;
 }
 
 
@@ -512,8 +526,9 @@ button > a {
 .icons  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
-  margin: 0.5rem auto 3rem auto;
-  max-width: 50%;
+  margin: 0.5rem auto 1rem auto;
+  max-width: 85%;
+  line-height: 2rem;
 }
 
 .iconWrapper{
@@ -548,7 +563,11 @@ button > a {
 .download  p {
   color: var(--Grayish-Blue);
   font-weight: 400;
+  position: relative;
+  margin: auto;
   margin-bottom: 3rem;
+  width: 50%;
+  line-height: 2rem;
 }
 
 
@@ -599,6 +618,11 @@ footer {
 
 .linkList > li {
   margin: 0 .5rem 0 .5rem;
+  transition: transform 2s;
+}
+
+li:hover{
+  transform: translate(0,-10px);
 }
 
 .links a {
@@ -614,6 +638,15 @@ footer {
   align-items: center;
   justify-content: center;
   flex-basis: 20%;
+}
+
+.socialmedialogos > img{
+  transition: transform 5s;
+
+}
+
+.socialMediaLogos > img:hover{
+  transform: rotate(30deg);
 }
 
 .twitterLogo {
